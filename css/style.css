@@ -1,0 +1,155 @@
+:root{
+    /* NEUTRAL */
+    --light-gray: #F0F0F0;
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* PRIMARY */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* GRADIENTS */
+    --light-slate-blue: hsl(252, 100%, 67%); /* background */
+    --light-royal-blue: hsl(241, 81%, 54%); /* background */
+    --violet-blue: hsla(256, 72%, 46%, 1); /* circle */
+    --persian-blue: hsla(241, 72%, 46%, 0); /* circle */
+    --light-red-10: hsla(0, 100%, 67%, 10%);
+    --orangey-yellow-10: hsla(39, 100%, 56%, 10%);
+    --green-teal-10: hsla(166, 100%, 37%, 10%);
+    --cobalt-blue-10: hsla(234, 85%, 45%, 10%);
+
+}
+.page-wrapper {
+    background-color: var(--light-gray);
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+}
+main.container {
+    height: 85%;
+    width: 70%;
+    background-color:#FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 20%);
+}
+.content-box {
+    box-shadow: inherit;
+    height: 50%;
+    width: 50%;
+    border-radius: 30px;
+}
+#result-col {
+    border-radius: 30px;
+    background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    gap: 25px;
+}
+#result-col h3 {
+    color: var(--light-lavender);
+    font-size: 20px;
+}
+#result-col #circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+    border-radius: 9999%;
+    text-align: center;
+    background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
+}
+#result-col div h4 {
+    color: #FFF;
+    font-size: 50px;
+}
+#circle p {
+    color: var(--light-lavender);
+    font-size: 15px;
+    opacity: 70%;
+}
+#description {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#description span {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+#description p {
+    width: 70%;
+    font-size: 15px;
+    color: var(--light-lavender);
+}
+#summary-col {
+    gap: 25px;
+}
+#summary-col h3{
+    padding-left: 25px;
+}
+#bubble-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.summary-bubble {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 78%;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.summary-bubble .wrapper {
+    display: flex;
+    gap:10px;
+}
+.summary-bubble p{
+    color: var(--light-lavender) ;
+}
+.summary-bubble p span {
+    color: #000;
+    font-weight: 550;
+    opacity: 75%;
+}
+#reaction-bubble .wrapper h4 {
+    font-weight: 400;
+    color: var(--light-red);
+}
+#reaction-bubble {
+    background-color: var(--light-red-10);
+}
+#memory-bubble .wrapper h4 {
+    font-weight: 400;
+    color: var(--orangey-yellow);
+}
+#memory-bubble {
+    background-color: var(--orangey-yellow-10);
+}
+#verbal-bubble .wrapper h4 {
+    font-weight: 400;
+    color: var(--green-teal);
+}
+#verbal-bubble{
+    background-color: var(--green-teal-10);
+}
+#visual-bubble .wrapper h4 {
+    font-weight: 400;
+    color: var(--cobalt-blue);
+}
+#visual-bubble{
+    background-color: var(--cobalt-blue-10);
+}
+button.button  {
+    border: none;
+    border-radius: 30px;
+    width: 85%;
+    background-color: var(--dark-gray-blue);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
